@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gaming1.jpeg" type="image/jpeg">
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="Logo">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#food">Food Items</a></li>
+                <li><a href="#nonveg">Non-Veg Dishes</a></li>
+                <li><a href="#places">Famous Places</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="menu-icon.png" alt="Menu Icon">
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="logo">
+        <h1>Discover the best food & drinks in </h1>
+        
+        <label for="food">Choose a food item:</label>
+    <select id="food1" name="food1">
+        <option value="pizza" selected>Pizza</option>  <!-- Pre-selected option -->
+        <option value="burger">Burger</option>
+        <option value="fries">Fries</option>
+        <option value="salad">Salad</option>
+        <option value="none" disabled>None available</option> <!-- Disabled option -->
+    </select>
+       
+    </section>
+
+    <!-- Food Items Section -->
+    <section id="food">
+        <h1>Popular Food Items</h1>
+        <ul>
+            <li><a href="caed.html">Pizza</a></li>
+            <li><a href="#">Burger</a></li>
+            <li><a href="#">Fries</a></li>
+            <li><a href="#">Salad</a></li>
+        </ul>
+    </section>
+
+    <!-- Non-Veg Dishes Section -->
+    <section id="nonveg">
+        <h1>Famous Non-Veg Dishes</h1>
+        <ul>
+            <li><a href="#">Chicken Biryani</a></li>
+            <li><a href="#">Mutton Kebab</a></li>
+            <li></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Butter Chicken</a></li>
+        </ul>
+    </section>
+
+    <!-- Famous Places Section -->
+    <section id="places">
+        <h1>Famous Food Places</h1>
+        <ul>
+            <li><a href="/">Pizza - Italy</a></li>
+            <li><a href="#">Burger - USA</a></li>
+            <li>Fries - Belgium</li>
+            <li><a href="#">Chicken Biryani - Hyderabad, India</a></li>
+            <li><a href="#">Mutton Kebab - Lucknow, India</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zomato Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

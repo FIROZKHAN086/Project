@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png)no-repeat center center/cover;
+}
+
+header {
+    width: 100%;
+    background-color: #ff4f5a;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #333;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home {
+    /* background-color: #ffe6e6; */
+    color: white;
+    margin-top: 20px;
+    height: 80vh;
+    padding: 100px 20px;
+    text-align: center;
+    padding-top: 120px; /* Account for fixed navbar */
+}
+#home img{
+    width: 20vw;
+}
+
+/* Food Items Section */
+#food {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Non-Veg Dishes Section */
+#nonveg {
+    background-color: #ffe6e6;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Famous Places Section */
+#places {
+    background-color: #d6eaf8;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 20px;
+    padding: 10px 0;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: -200px;
+        background-color: #080707;
+        height: 100vh;
+        width: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
